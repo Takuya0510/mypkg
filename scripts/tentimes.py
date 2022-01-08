@@ -11,7 +11,7 @@ def cb(message):
 rospy.init_node('tentimes')
 sub = rospy.Subscriber('count_up', Int32, cb)
 pub = rospy.Publisher('tentimes', Int32, queue_size=1)
-rate = rospy.Rate(10)
+rate = rospy.Rate(1)
 while not rospy.is_shutdown():
     pub.publish(n)
     rate.sleep()
