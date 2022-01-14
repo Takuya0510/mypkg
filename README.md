@@ -40,10 +40,11 @@
 そしたら、値を確認するために別の端末から、次のコマンドを実行します。  
 `$ rostopic echo /count_up`  
 
-・以下のプログラムを実行するためには先にcount.pyを実行しておく必要があります。
+・以下のプログラムを実行するためには先にcount.pyを実行しておく必要があります。  
 
 ・twice.pyを実行する為に、次のコマンドを実行します。  
-`$rosrun mypkg twice.py`  
+`$rosrun mypkg twice.py`　　
+
 そしたら、値を確認するために別の端末から、次のコマンドを実行します。  
 `$ rostopic echo /twice`  
 
