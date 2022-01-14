@@ -17,7 +17,7 @@
 
 参考にした上田先生の第10回の授業スライド(https://ryuichiueda.github.io/robosys2020/lesson10_ros.html#/)  
 
-# 動作方法
+# 動作方法(1)
 まず、次のようなコマンドを実行し、ディレクトリを移動します。  
 `$ cd ./catkin_ws/src`  
 
@@ -32,6 +32,8 @@
 `$ chmod +x sixtimws.py`  
 `$ chmod +x eighttimws.py`  
 `$ chmod +x tentimws.py`  
+
+(※　ここから先は動作方法(2)でも実行できます。)  
 
 ・count.pyを実行する為に、次のコマンドを実行します。  
 `$rosrun mypkg count.py`  
@@ -63,6 +65,32 @@
 ・tentimes.pyを実行する為に、次のコマンドを実行します。  
 `$rosrun mypkg tentimes.py`  
 そしたら、値を確認するために別の端末から、次のコマンドを実行します。  
+`$ rostopic echo /tentimes`  
+
+# 動作方法(2) 
+動作方法(1)の(※)の部分まで実行します。　　
+そしたら、次のコマンドを実行します。
+`$roslaunch mypkg mypkg.launch`  
+このコマンドを打つことで、動作方法(1)ではそれぞれ一つずつ立ち上げていましたが、一度ですべて立ち上げ、実行することができます。  
+
+値を確認する方法
+
+・count.pyの値を確認するために別の端末から、次のコマンドを実行します。  
+`$ rostopic echo /count_up`  
+
+・twice.pyの値を確認するために別の端末から、次のコマンドを実行します。  
+`$ rostopic echo /twice`  　
+
+・fourtimes.pyの値を確認するために別の端末から、次のコマンドを実行します。  
+`$ rostopic echo /fourtimes`  　
+
+・sixtimes.pyの値を確認するために別の端末から、次のコマンドを実行します。  
+`$ rostopic echo /sixtimes`  　
+
+・eighttimes.pyの値を確認するために別の端末から、次のコマンドを実行します。  
+`$ rostopic echo /eighttimes`  　　
+
+・tentimes.pyの値を確認するために別の端末から、次のコマンドを実行します。  
 `$ rostopic echo /tentimes`  
 
 # ライセンス
