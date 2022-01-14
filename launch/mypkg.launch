@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="mypkg" name="count" type="count.py" required="true" />
+  <node pkg="mypkg" name="twice" type="twice.py" output="screen" required="true" />
+  <node pkg="mypkg" name="fourtimes" type="fourtimes.py" output="screen" required="true" />
+  <node pkg="mypkg" name="sixtimes" type="sixtimes.py" output="screen" required="true" />
+  <node pkg="mypkg" name="eighttimes" type="eighttimes.py" output="screen" required="true" />
+  <node pkg="mypkg" name="tentimes" type="tentimes.py" output="screen" required="true" />
+</launch>
