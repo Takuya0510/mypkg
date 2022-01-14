@@ -70,7 +70,7 @@
 
 # 動作方法(2) 
 動作方法(1)の(※)の部分まで実行します。  
-まず、/catkin_ws/src/mypkg/launchというディレクトリを作成し(https://github.com/Takuya0510/mypkg) に置いてあるlaunchのファイルを./catkin_ws/srcc/mypkg/launchのディレクトリの中にクローンします。 
+まず、./catkin_ws/src/mypkg/launch というディレクトリを作成し(https://github.com/Takuya0510/mypkg) に置いてあるlaunchのファイルを ./catkin_ws/srcc/mypkg/launch のディレクトリの中にクローンします。 
 そしたら、次のコマンドを実行します。  
 `$roslaunch mypkg mypkg.launch`  
 このコマンドを打つことで、動作方法(1)ではそれぞれ一つずつ立ち上げていましたが、一度ですべて立ち上げ、実行することができます。  
