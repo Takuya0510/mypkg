@@ -36,7 +36,7 @@
 (※　ここから先は動作方法(2)でも実行できます。)  
 
 ・count.pyを実行する為に、次のコマンドを実行します。  
-`$rosrun mypkg count.py`  
+`$ rosrun mypkg count.py`  
 そしたら、値を確認するために別の端末から、次のコマンドを実行します。  
 `$ rostopic echo /count_up`  
 
@@ -70,6 +70,7 @@
 
 # 動作方法(2) 
 動作方法(1)の(※)の部分まで実行します。  
+まず、/catkin_ws/src/mypkg/launchというディレクトリを作成し(https://github.com/Takuya0510/mypkg) に置いてあるlaunchのファイルを./catkin_ws/srcc/mypkg/launchのディレクトリの中にクローンします。 
 そしたら、次のコマンドを実行します。  
 `$roslaunch mypkg mypkg.launch`  
 このコマンドを打つことで、動作方法(1)ではそれぞれ一つずつ立ち上げていましたが、一度ですべて立ち上げ、実行することができます。  
